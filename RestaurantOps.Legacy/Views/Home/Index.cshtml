@@ -1,4 +1,4 @@
-﻿@{
+@{
     ViewData["Title"] = "Home";
 }
 
@@ -44,6 +44,16 @@
                 <h5 class="card-title">Schedule</h5>
                 <p class="card-text">Manage staff shifts and time off</p>
                 <a href="@Url.Action("Index", "Schedule")" class="btn btn-warning">View Schedule</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3 mb-3">
+        <div class="card h-100">
+            <div class="card-body text-center">
+                <h5 class="card-title">Restaurant Map</h5>
+                <p class="card-text">View location and get directions</p>
+                <a href="@Url.Action("Map", "Home")" class="btn btn-info">View Map</a>
             </div>
         </div>
     </div>
