@@ -1,0 +1,269 @@
+/* Comprehensive Red Theme Override */
+/* This file ensures all UI elements are styled with red colors */
+
+/* Global overrides */
+* {
+  --bs-primary: #d32f2f !important;
+  --bs-secondary: #c62828 !important;
+  --bs-success: #d32f2f !important;
+  --bs-info: #d32f2f !important;
+  --bs-warning: #d32f2f !important;
+  --bs-danger: #d32f2f !important;
+  --bs-light: #ffcdd2 !important;
+  --bs-dark: #b71c1c !important;
+}
+
+/* Force all Bootstrap button variants to be red */
+.btn-outline-primary, .btn-outline-secondary, .btn-outline-success, 
+.btn-outline-info, .btn-outline-warning, .btn-outline-danger {
+  color: #d32f2f !important;
+  border-color: #d32f2f !important;
+  background-color: transparent !important;
+}
+
+.btn-outline-primary:hover, .btn-outline-secondary:hover, .btn-outline-success:hover,
+.btn-outline-info:hover, .btn-outline-warning:hover, .btn-outline-danger:hover {
+  color: white !important;
+  background-color: #d32f2f !important;
+  border-color: #c62828 !important;
+}
+
+/* Force all alert variants to be red-themed */
+.alert-primary, .alert-secondary, .alert-success, .alert-info, 
+.alert-warning, .alert-danger, .alert-light, .alert-dark {
+  background-color: #ffcdd2 !important;
+  border-color: #e57373 !important;
+  color: #c62828 !important;
+}
+
+/* Force all badge variants to be red */
+.badge-primary, .badge-secondary, .badge-success, .badge-info,
+.badge-warning, .badge-danger, .badge-light, .badge-dark,
+.bg-primary, .bg-secondary, .bg-success, .bg-info,
+.bg-warning, .bg-danger {
+  background-color: #d32f2f !important;
+  color: white !important;
+}
+
+/* Force all text color variants to be red-themed */
+.text-primary, .text-secondary, .text-success, .text-info,
+.text-warning, .text-danger {
+  color: #c62828 !important;
+}
+
+/* Force all border color variants to be red */
+.border-primary, .border-secondary, .border-success, .border-info,
+.border-warning, .border-danger {
+  border-color: #e57373 !important;
+}
+
+/* Force all progress bar variants to be red */
+.progress-bar, .progress-bar-striped, .progress-bar-animated {
+  background-color: #d32f2f !important;
+}
+
+/* Force all list group variants to be red */
+.list-group-item-primary, .list-group-item-secondary, .list-group-item-success,
+.list-group-item-info, .list-group-item-warning, .list-group-item-danger {
+  background-color: #ffcdd2 !important;
+  border-color: #e57373 !important;
+  color: #c62828 !important;
+}
+
+/* Dropdown overrides */
+.dropdown-menu {
+  background-color: #ffebee !important;
+  border-color: #e57373 !important;
+}
+
+.dropdown-item {
+  color: #c62828 !important;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+  background-color: #ffcdd2 !important;
+  color: #b71c1c !important;
+}
+
+.dropdown-divider {
+  border-color: #e57373 !important;
+}
+
+/* Modal overrides */
+.modal-content {
+  background-color: #ffebee !important;
+  border-color: #e57373 !important;
+}
+
+.modal-header {
+  background-color: #f44336 !important;
+  border-color: #d32f2f !important;
+  color: white !important;
+}
+
+.modal-body {
+  color: #c62828 !important;
+}
+
+.modal-footer {
+  border-color: #e57373 !important;
+}
+
+/* Pagination overrides */
+.page-link {
+  color: #d32f2f !important;
+  background-color: #ffebee !important;
+  border-color: #e57373 !important;
+}
+
+.page-link:hover {
+  color: #b71c1c !important;
+  background-color: #ffcdd2 !important;
+  border-color: #d32f2f !important;
+}
+
+.page-item.active .page-link {
+  background-color: #d32f2f !important;
+  border-color: #c62828 !important;
+  color: white !important;
+}
+
+/* Breadcrumb overrides */
+.breadcrumb {
+  background-color: #ffcdd2 !important;
+}
+
+.breadcrumb-item a {
+  color: #d32f2f !important;
+}
+
+.breadcrumb-item.active {
+  color: #b71c1c !important;
+}
+
+/* Tab overrides */
+.nav-tabs .nav-link {
+  color: #c62828 !important;
+  border-color: transparent transparent #e57373 !important;
+}
+
+.nav-tabs .nav-link:hover {
+  border-color: #e57373 #e57373 #d32f2f !important;
+  color: #b71c1c !important;
+}
+
+.nav-tabs .nav-link.active {
+  color: #b71c1c !important;
+  background-color: #ffebee !important;
+  border-color: #e57373 #e57373 #ffebee !important;
+}
+
+/* Accordion overrides */
+.accordion-button {
+  background-color: #ffcdd2 !important;
+  color: #c62828 !important;
+  border-color: #e57373 !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #f44336 !important;
+  color: white !important;
+}
+
+.accordion-body {
+  background-color: #ffebee !important;
+  color: #c62828 !important;
+}
+
+/* Spinner overrides */
+.spinner-border, .spinner-grow {
+  color: #d32f2f !important;
+}
+
+/* Toast overrides */
+.toast {
+  background-color: #ffebee !important;
+  border-color: #e57373 !important;
+}
+
+.toast-header {
+  background-color: #ffcdd2 !important;
+  color: #c62828 !important;
+}
+
+.toast-body {
+  color: #c62828 !important;
+}
+
+/* Tooltip and Popover overrides */
+.tooltip-inner {
+  background-color: #d32f2f !important;
+  color: white !important;
+}
+
+.popover {
+  background-color: #ffebee !important;
+  border-color: #e57373 !important;
+}
+
+.popover-header {
+  background-color: #f44336 !important;
+  color: white !important;
+  border-color: #d32f2f !important;
+}
+
+.popover-body {
+  color: #c62828 !important;
+}
+
+/* Offcanvas overrides */
+.offcanvas {
+  background-color: #ffebee !important;
+  color: #c62828 !important;
+}
+
+.offcanvas-header {
+  border-color: #e57373 !important;
+}
+
+/* Force any remaining elements */
+input[type="text"], input[type="email"], input[type="password"], 
+input[type="number"], input[type="tel"], input[type="url"],
+textarea, select {
+  border-color: #e57373 !important;
+  color: #c62828 !important;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus,
+input[type="number"]:focus, input[type="tel"]:focus, input[type="url"]:focus,
+textarea:focus, select:focus {
+  border-color: #d32f2f !important;
+  box-shadow: 0 0 0 0.2rem rgba(244, 67, 54, 0.25) !important;
+}
+
+/* Checkbox and radio overrides */
+.form-check-input:checked {
+  background-color: #d32f2f !important;
+  border-color: #c62828 !important;
+}
+
+.form-check-input:focus {
+  border-color: #e57373 !important;
+  box-shadow: 0 0 0 0.25rem rgba(244, 67, 54, 0.25) !important;
+}
+
+/* Switch overrides */
+.form-switch .form-check-input:checked {
+  background-color: #d32f2f !important;
+  border-color: #c62828 !important;
+}
+
+/* Range input overrides */
+.form-range::-webkit-slider-thumb {
+  background-color: #d32f2f !important;
+}
+
+.form-range::-moz-range-thumb {
+  background-color: #d32f2f !important;
+  border-color: #c62828 !important;
+}

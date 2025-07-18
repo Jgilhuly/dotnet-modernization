@@ -12,16 +12,58 @@ html {
 
 body {
   margin-bottom: 60px;
+  background-color: #ffebee !important; /* Light red background */
+  color: #c62828 !important; /* Dark red text */
+}
+
+/* Red theme overrides for all UI elements */
+h1, h2, h3, h4, h5, h6 {
+  color: #b71c1c !important; /* Very dark red for headings */
+}
+
+p, span, div {
+  color: #c62828 !important; /* Dark red for text */
 }
 
 /* Simple button styles */
 .btn {
   margin: 2px;
+  background-color: #d32f2f !important; /* Red background */
+  border-color: #c62828 !important; /* Dark red border */
+  color: white !important; /* White text */
+}
+
+.btn:hover {
+  background-color: #b71c1c !important; /* Darker red on hover */
+  border-color: #a00000 !important;
+}
+
+.btn-primary, .btn-secondary, .btn-success, .btn-warning, .btn-info, .btn-danger {
+  background-color: #d32f2f !important;
+  border-color: #c62828 !important;
+  color: white !important;
+}
+
+.btn-primary:hover, .btn-secondary:hover, .btn-success:hover, .btn-warning:hover, .btn-info:hover, .btn-danger:hover {
+  background-color: #b71c1c !important;
+  border-color: #a00000 !important;
 }
 
 /* Basic table styling */
 .table {
   margin-bottom: 20px;
+  border-color: #e57373 !important; /* Light red borders */
+}
+
+.table th {
+  background-color: #f44336 !important; /* Red header background */
+  color: white !important; /* White text */
+  border-color: #d32f2f !important;
+}
+
+.table td {
+  border-color: #e57373 !important;
+  color: #c62828 !important;
 }
 
 /* Basic form styling */
@@ -29,9 +71,71 @@ body {
   margin-bottom: 15px;
 }
 
+.form-control {
+  border-color: #e57373 !important;
+  color: #c62828 !important;
+}
+
+.form-control:focus {
+  border-color: #d32f2f !important;
+  box-shadow: 0 0 0 0.2rem rgba(244, 67, 54, 0.25) !important;
+}
+
+/* Card styling */
+.card {
+  border-color: #e57373 !important;
+  background-color: #ffcdd2 !important; /* Light red card background */
+}
+
+.card-header {
+  background-color: #f44336 !important;
+  border-color: #d32f2f !important;
+  color: white !important;
+}
+
+.card-body {
+  color: #c62828 !important;
+}
+
+.card-title {
+  color: #b71c1c !important;
+}
+
+.card-text {
+  color: #c62828 !important;
+}
+
 /* Basic navbar styling */
 .navbar-nav .nav-link {
   padding: 8px 15px;
+  color: #c62828 !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #b71c1c !important;
+}
+
+.navbar {
+  background-color: #ffcdd2 !important;
+  border-color: #e57373 !important;
+}
+
+.navbar-brand {
+  color: #b71c1c !important;
+  font-weight: bold;
+}
+
+.navbar-brand:hover {
+  color: #a00000 !important;
+}
+
+/* Links */
+a {
+  color: #d32f2f !important;
+}
+
+a:hover {
+  color: #b71c1c !important;
 }
 
 /* Simple utility classes */
@@ -49,4 +153,37 @@ body {
 
 .p-3 {
   padding: 1rem;
+}
+
+/* Alert overrides */
+.alert {
+  background-color: #ffcdd2 !important;
+  border-color: #e57373 !important;
+  color: #c62828 !important;
+}
+
+/* List group overrides */
+.list-group-item {
+  background-color: #ffcdd2 !important;
+  border-color: #e57373 !important;
+  color: #c62828 !important;
+}
+
+.list-group-item:hover {
+  background-color: #ffebee !important;
+}
+
+/* Badge overrides */
+.badge {
+  background-color: #d32f2f !important;
+  color: white !important;
+}
+
+/* Progress bar overrides */
+.progress {
+  background-color: #ffcdd2 !important;
+}
+
+.progress-bar {
+  background-color: #d32f2f !important;
 }
